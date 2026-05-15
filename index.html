@@ -36,6 +36,7 @@
             </div>
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                 <a href="#abstract" class="hover:text-cyan-400 transition-colors">Abstract</a>
+                <a href="#relevance" class="hover:text-cyan-400 transition-colors">Relevance</a>
                 <a href="#theory" class="hover:text-cyan-400 transition-colors">Model</a>
                 <a href="#tests" class="hover:text-cyan-400 transition-colors">Test Suite</a>
                 <a href="#results" class="hover:text-cyan-400 transition-colors">Results</a>
@@ -76,6 +77,37 @@
                 This project implements a minimal coupled-ODE model of thalamocortical sensory gating failure in the thalamic reticular nucleus (TRN). 
                 Dopaminergic dynamics are deliberately excluded to focus on gating integrity, energy metabolism, and inflammatory processes. 
                 Monte Carlo and interactive simulations evaluate a Nature-First hybrid closed-loop intervention.
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: POTENTIAL RELEVANCE -->
+    <section id="relevance" class="max-w-screen-2xl mx-auto px-8 py-16 bg-slate-900">
+        <div class="grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <h2 class="section-header text-4xl font-semibold mb-6">Potential Relevance</h2>
+            </div>
+            <div class="md:col-span-8 text-lg leading-relaxed text-slate-300">
+                <p class="mb-6">
+                    This sandbox models impaired sensory gating at the level of the thalamic reticular nucleus (TRN). 
+                    TRN dysfunction and sensory gating deficits are observed across multiple brain disorders. 
+                    The hybrid intervention (closed-loop LIFU + metabolic support + broad-spectrum hemp CBX) is therefore framed as a systems-level repair strategy for the shared “leaky gate” subsystem.
+                </p>
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 text-base">
+                    <ul class="space-y-3">
+                        <li><strong class="text-emerald-400">• Schizophrenia</strong> — core motivation (P50 gating deficits, reduced TRN inhibition, sleep spindle abnormalities)</li>
+                        <li><strong class="text-emerald-400">• Autism Spectrum Disorder</strong> — sensory hypersensitivity and filtering problems</li>
+                        <li><strong class="text-emerald-400">• Bipolar Disorder</strong> — gating deficits during manic and depressive episodes</li>
+                    </ul>
+                    <ul class="space-y-3">
+                        <li><strong class="text-emerald-400">• ADHD</strong> — impaired sensory selection and attention</li>
+                        <li><strong class="text-emerald-400">• Epilepsy</strong> — TRN’s role in seizure propagation control</li>
+                        <li><strong class="text-emerald-400">• Anxiety / PTSD</strong> — heightened sensory reactivity</li>
+                    </ul>
+                </div>
+                <p class="mt-8 text-sm text-slate-400">
+                    These connections are mechanistic hypotheses only. The model does not claim to treat or cure any condition.
+                </p>
             </div>
         </div>
     </section>
@@ -315,5 +347,4 @@
         });
     </script>
 </body>
-
-    </html>
+</html>
