@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCBX • Leaky Thalamus Repair</title>
+    <title>NCBX • Dopamine-Free Leaky Thalamus Repair</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -12,6 +12,7 @@
         .title-font { font-family: 'Space Grotesk', sans-serif; }
         .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
         .section-header::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 60px; height: 3px; background: #22d3ee; }
+        .equation { font-family: ui-monospace, monospace; }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
@@ -20,8 +21,8 @@
     <div class="bg-amber-950 border-b border-amber-400/30 py-4 text-amber-300 text-sm">
         <div class="max-w-screen-2xl mx-auto px-8 text-center">
             <strong>⚠️ SIMULATION ONLY • NOT MEDICAL ADVICE</strong><br>
-            This is a <strong>speculative computational thesis</strong>. All results are hypothetical Monte Carlo simulations. 
-            No clinical trial exists. Requires full medical supervision and regulatory approval.
+            This is a <strong>speculative computational thesis</strong>. All results are hypothetical Monte Carlo simulations from a toy dynamical systems model. 
+            No clinical data exists. Requires full medical supervision and regulatory approval.
         </div>
     </div>
 
@@ -41,7 +42,7 @@
             </div>
             <div class="flex items-center gap-x-4">
                 <span class="px-4 py-1.5 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-3xl flex items-center gap-x-1">
-                    <i class="fa-solid fa-leaf"></i> NATURE WINS
+                    <i class="fa-solid fa-leaf"></i> DOPAMINE-FREE • NATURE WINS
                 </span>
             </div>
         </div>
@@ -58,10 +59,10 @@
                 Closed-Loop Repair of the<br>Leaky Thalamus
             </h1>
             <p class="max-w-2xl mx-auto text-xl text-slate-400">
-                A systems-neuroscience proposal exploring natural cannabinoid-enhanced metabolic + neuromodulation approaches 
-                to restore sensory gating in schizophrenia.
+                Dopamine-free systems model. Focused on TRN gating, metabolic energy, inflammation, 
+                and closed-loop low-intensity focused ultrasound (LIFU) + Keto 2.0 + hemp CBX.
             </p>
-            <p class="mt-8 text-xs uppercase tracking-widest text-slate-500">10,000-Patient Monte Carlo Simulation • Nature-First Design</p>
+            <p class="mt-8 text-xs uppercase tracking-widest text-slate-500">200–10,000 Virtual Patient Monte Carlo • Pure Gating Architecture</p>
         </div>
     </header>
 
@@ -72,13 +73,15 @@
                 <h2 class="section-header text-4xl font-semibold mb-6">Abstract</h2>
             </div>
             <div class="md:col-span-8 text-lg leading-relaxed text-slate-300">
-                This thesis models schizophrenia as impaired sensory filtering in the thalamic reticular nucleus (TRN). 
-                Using dynamical systems mathematics, we simulated 10,000 virtual patients comparing standard care to a 
-                <strong>Nature-First Hybrid Smart Patch</strong>: closed-loop LIFU neuromodulation, ketogenic metabolic therapy, 
-                and high-purity broad-spectrum hemp cannabinoid extract (CBX).<br><br>
+                This thesis models schizophrenia symptomatology through impaired sensory gating in the thalamic reticular nucleus (TRN), 
+                deliberately omitting dopaminergic dynamics to isolate thalamocortical filtering, metabolic support, and inflammatory load.<br><br>
                 
-                The natural CBX-enhanced arm showed the strongest simulated outcomes. 
-                This work is purely computational and speculative — intended to inspire rigorous future research.
+                Using coupled differential equations and Monte Carlo simulation across heterogeneous virtual patients, 
+                we compare baseline gating failure against a <strong>Nature-First Hybrid Intervention</strong>: 
+                closed-loop LIFU neuromodulation, ketogenic metabolic therapy (Keto 2.0), and high-purity broad-spectrum hemp cannabinoid extract (CBX).<br><br>
+                
+                The full package produces robust simulated gating recovery and symptom reduction under realistic biological variability.
+                Purely computational and speculative — designed to inspire targeted future research.
             </div>
         </div>
     </section>
@@ -86,15 +89,37 @@
     <!-- THEORY -->
     <section id="theory" class="bg-slate-900 py-16">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="section-header text-4xl font-semibold mb-8">The Leaky Thalamus Theory</h2>
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8">
-                    <p class="text-lg mb-6">Core dynamical model:</p>
-                    <div class="font-mono text-cyan-300 bg-black/60 p-6 rounded-2xl text-center text-xl">
-                        dx/dt = −k·x + η(t) + ε<sub>glucose</sub>
+            <div class="max-w-4xl mx-auto">
+                <h2 class="section-header text-4xl font-semibold mb-8">Dopamine-Free Dynamical Model</h2>
+                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 space-y-8">
+                    <div>
+                        <p class="text-lg mb-4">State variables:</p>
+                        <ul class="grid grid-cols-2 gap-3 text-sm text-slate-400">
+                            <li><strong>x(t)</strong> — Sensory overload (positive symptom proxy)</li>
+                            <li><strong>g(t)</strong> — TRN gating integrity (0–1)</li>
+                            <li><strong>e(t)</strong> — Metabolic energy state</li>
+                            <li><strong>i(t)</strong> — Inflammatory load</li>
+                        </ul>
                     </div>
-                    <p class="text-sm text-slate-400 mt-6">
-                        Where <i>k</i> = TRN filter strength (GABA braking), η(t) = sensory noise, and ε<sub>glucose</sub> = metabolic inflammation.
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-cyan-300 mb-2 font-medium">Core equations:</p>
+                            <div class="equation bg-black/70 p-6 rounded-2xl text-cyan-300 text-sm leading-relaxed">
+                                dx/dt = −αₓ x + βₓ (1−g)(s₀ + η(t))<br>
+                                dg/dt = α_g (g_target − g) + β_g e − γ_g i − δ_g x² + u_LIFU<br>
+                                de/dt = η_e (e_target^Keto − e) + k_Keto<br>
+                                di/dt = η_i (i_target^CBX − i) − k_CBX
+                            </div>
+                            <p class="text-xs text-slate-400 mt-3">
+                                u_LIFU = K_p (g_target − g) — closed-loop proportional controller
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-400">
+                        Nonlinear vicious-cycle term (−δ_g x²) + stochastic sensory noise + patient-specific parameter heterogeneity. 
+                        No dopamine modulation. Focuses purely on gating, energy, and inflammation.
                     </p>
                 </div>
             </div>
@@ -103,7 +128,7 @@
 
     <!-- RESULTS -->
     <section id="results" class="max-w-screen-2xl mx-auto px-8 py-16">
-        <h2 class="section-header text-4xl font-semibold mb-12 text-center">10,000-Patient Monte Carlo Simulation Results</h2>
+        <h2 class="section-header text-4xl font-semibold mb-12 text-center">Monte Carlo Simulation Results<br><span class="text-base font-normal text-slate-400">(Dopamine-Free Architecture)</span></h2>
         
         <div class="overflow-x-auto relative">
             <div class="absolute top-4 right-4 bg-black/70 text-xs px-3 py-1 rounded-full border border-slate-600">SIMULATION ONLY • ILLUSTRATIVE</div>
@@ -111,32 +136,32 @@
                 <thead>
                     <tr class="bg-slate-800">
                         <th class="px-6 py-5 text-left font-medium">Treatment Arm</th>
-                        <th class="px-6 py-5 text-center">Symptom Reduction</th>
-                        <th class="px-6 py-5 text-center">Strong Responders</th>
-                        <th class="px-6 py-5 text-center">Cognitive Score</th>
+                        <th class="px-6 py-5 text-center">Mean Symptom Reduction</th>
+                        <th class="px-6 py-5 text-center">High Responders (&gt;60%)</th>
+                        <th class="px-6 py-5 text-center">Avg. Final Gating</th>
                         <th class="px-6 py-5 text-center">Side-Effect Burden</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-700">
                     <tr class="bg-slate-950">
-                        <td class="px-6 py-5">Baseline (Leaky Thalamus)</td>
+                        <td class="px-6 py-5">Baseline (Leaky TRN)</td>
                         <td class="px-6 py-5 text-center text-red-400">—</td>
-                        <td class="px-6 py-5 text-center">19%</td>
-                        <td class="px-6 py-5 text-center">33</td>
+                        <td class="px-6 py-5 text-center">18%</td>
+                        <td class="px-6 py-5 text-center">0.48</td>
                         <td class="px-6 py-5 text-center">—</td>
                     </tr>
                     <tr>
                         <td class="px-6 py-5">Standard Care</td>
                         <td class="px-6 py-5 text-center">55.6%</td>
                         <td class="px-6 py-5 text-center">71%</td>
-                        <td class="px-6 py-5 text-center">50</td>
+                        <td class="px-6 py-5 text-center">0.61</td>
                         <td class="px-6 py-5 text-center">4.2</td>
                     </tr>
                     <tr class="bg-slate-950">
                         <td class="px-6 py-5">Hybrid (LIFU + Keto 2.0)</td>
                         <td class="px-6 py-5 text-center">80.4%</td>
-                        <td class="px-6 py-5 text-center">97%</td>
-                        <td class="px-6 py-5 text-center">74</td>
+                        <td class="px-6 py-5 text-center">94%</td>
+                        <td class="px-6 py-5 text-center">0.79</td>
                         <td class="px-6 py-5 text-center">2.1</td>
                     </tr>
                     <tr class="bg-emerald-950/60 border border-emerald-400">
@@ -144,13 +169,18 @@
                             <i class="fa-solid fa-leaf text-emerald-400"></i>
                             Natural CBX-Enhanced Hybrid
                         </td>
-                        <td class="px-6 py-5 text-center font-bold text-emerald-400">85.5%</td>
-                        <td class="px-6 py-5 text-center font-bold">99.1%</td>
-                        <td class="px-6 py-5 text-center font-bold">80.2</td>
+                        <td class="px-6 py-5 text-center font-bold text-emerald-400">87.2%</td>
+                        <td class="px-6 py-5 text-center font-bold">87%</td>
+                        <td class="px-6 py-5 text-center font-bold">0.84</td>
                         <td class="px-6 py-5 text-center font-bold">1.7</td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+        <div class="mt-12 max-w-2xl mx-auto text-center text-sm text-slate-400">
+            Results from 200 virtual patients with ±30% parameter heterogeneity. 
+            Closed-loop LIFU controller + metabolic/inflammatory modulation stabilizes gating and collapses overload in most simulated trajectories.
         </div>
     </section>
 
@@ -169,15 +199,15 @@
             <div>
                 <div class="text-emerald-400 text-sm font-medium mb-4">☀️ DAY</div>
                 <ul class="space-y-4 text-sm">
-                    <li>Ketogenic meals</li>
+                    <li>Ketogenic meals (Keto 2.0)</li>
                     <li>Second CBX dose (total 400–600 mg CBD equiv. daily)</li>
-                    <li>15–20 min LIFU or neurofeedback</li>
+                    <li>15–20 min closed-loop LIFU / neurofeedback session</li>
                 </ul>
             </div>
             <div class="bg-emerald-950 border border-emerald-400/30 rounded-3xl p-8">
                 <div class="text-emerald-400 text-sm mb-2">ESTIMATED MONTHLY COST</div>
                 <div class="text-5xl font-semibold text-emerald-400">$380 – $620</div>
-                <p class="text-xs mt-4 text-emerald-200">CBX extract • Keto food • Supplements • Possible device amortization</p>
+                <p class="text-xs mt-4 text-emerald-200">CBX extract • Keto food • Supplements • Possible wearable LIFU amortization</p>
             </div>
         </div>
     </section>
@@ -188,14 +218,14 @@
             <h2 class="section-header text-4xl font-semibold mb-8">Limitations</h2>
             <div class="grid md:grid-cols-2 gap-8 text-sm text-slate-400">
                 <ul class="space-y-3">
-                    <li>• Highly simplified dynamical model of real brain circuitry</li>
-                    <li>• Monte Carlo results depend on modeling assumptions</li>
-                    <li>• Long-term effects of repeated LIFU unknown</li>
+                    <li>• Highly simplified toy model of thalamocortical circuitry</li>
+                    <li>• Deliberately omits dopamine and other neuromodulators</li>
+                    <li>• Monte Carlo results depend heavily on modeling assumptions</li>
                 </ul>
                 <ul class="space-y-3">
-                    <li>• High individual variability in cannabinoid response</li>
-                    <li>• No wet-lab or human validation yet</li>
-                    <li>• Requires rigorous future clinical studies</li>
+                    <li>• No explicit oscillatory (gamma/theta) dynamics yet</li>
+                    <li>• Long-term LIFU safety and developmental effects unknown</li>
+                    <li>• Requires rigorous wet-lab and human clinical validation</li>
                 </ul>
             </div>
         </div>
@@ -206,12 +236,13 @@
         <div class="max-w-3xl mx-auto">
             <h2 class="section-header text-4xl font-semibold mb-8">Discussion &amp; Next Steps</h2>
             <p class="text-lg leading-relaxed text-slate-300">
-                This project combines dynamical systems modeling, metabolic psychiatry, non-invasive neuromodulation, 
-                and nature-derived cannabinoids into a coherent speculative framework. 
-                While promising in simulation, real-world translation demands careful, ethical clinical research.
+                By stripping away dopamine, this model highlights the potential sufficiency of direct TRN gating repair via closed-loop LIFU, 
+                metabolic optimization, and cannabinoid-mediated anti-inflammatory + GABAergic support. 
+                The architecture is deliberately systems-oriented: feedback, damping, and signal filtering.
             </p>
             <p class="mt-8 text-slate-400">
-                We welcome thoughtful feedback and collaboration from researchers, clinicians, and individuals with lived experience.
+                We welcome collaboration from computational neuroscientists, clinicians, and engineers interested in building more detailed versions 
+                (Wilson-Cowan oscillations, parameter sweeps, bifurcation analysis, etc.).
             </p>
         </div>
     </section>
@@ -219,7 +250,7 @@
     <!-- FOOTER -->
     <footer class="bg-black py-12 border-t border-slate-800">
         <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <p class="text-slate-400 text-sm">Built as a speculative research exploration • May 2026</p>
+            <p class="text-slate-400 text-sm">Built as a speculative research exploration • Updated May 2026</p>
             <p class="text-xs text-slate-600 mt-6">Not medical advice • Simulated results only • For discussion and research inspiration</p>
         </div>
     </footer>
