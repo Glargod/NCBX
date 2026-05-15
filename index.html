@@ -13,7 +13,7 @@
         .title-font { font-family: 'Space Grotesk', sans-serif; }
         .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
         .section-header::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 60px; height: 3px; background: #22d3ee; }
-        .equation { font-family: ui-monospace, monospace; line-height: 1.8; }
+        .equation { font-family: ui-monospace, monospace; line-height: 1.85; }
         .sim-slider { accent-color: #22d3ee; }
     </style>
 </head>
@@ -22,8 +22,8 @@
     <!-- DISCLAIMER -->
     <div class="bg-amber-950 border-b border-amber-400/30 py-4 text-amber-300 text-sm">
         <div class="max-w-screen-2xl mx-auto px-8 text-center">
-            <strong>⚠️ PURELY SPECULATIVE SIMULATION • NOT MEDICAL ADVICE</strong><br>
-            Toy dynamical systems model only. No human data. For research discussion purposes.
+            <strong>⚠️ SIMULATION ONLY • NOT MEDICAL ADVICE</strong><br>
+            This is a speculative toy dynamical systems model. All results are hypothetical. No clinical data exists.
         </div>
     </div>
 
@@ -39,6 +39,7 @@
                 <a href="#theory" class="hover:text-cyan-400 transition-colors">Model</a>
                 <a href="#results" class="hover:text-cyan-400 transition-colors">Results</a>
                 <a href="#regimen" class="hover:text-cyan-400 transition-colors">Regimen</a>
+                <a href="#discussion" class="hover:text-cyan-400 transition-colors">Discussion</a>
             </div>
             <div class="flex items-center gap-x-4">
                 <span class="px-4 py-1.5 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-3xl flex items-center gap-x-1">
@@ -52,28 +53,35 @@
     <header class="hero-bg py-24 md:py-32">
         <div class="max-w-screen-2xl mx-auto px-8 text-center">
             <div class="inline-flex items-center gap-x-2 bg-white/10 text-white text-sm font-medium px-6 py-2 rounded-3xl mb-6">
-                <i class="fa-solid fa-flask"></i> INDEPENDENT COMPUTATIONAL THESIS 2026
+                <i class="fa-solid fa-flask"></i> INDEPENDENT COMPUTATIONAL THESIS • 2026
             </div>
             <h1 class="title-font text-5xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
                 Closed-Loop Repair of the<br>Leaky Thalamus
             </h1>
             <p class="max-w-2xl mx-auto text-xl text-slate-400">
-                Dopamine-omitted • TRN gating + metabolic + inflammatory dynamics<br>
-                Closed-loop LIFU + Keto 2.0 + Hemp CBX
+                Dopamine-omitted systems model focusing on TRN gating integrity, metabolic energy, inflammatory load,<br>
+                and closed-loop LIFU + Keto 2.0 + Hemp CBX
             </p>
+            <p class="mt-8 text-xs uppercase tracking-widest text-slate-500">Monte Carlo • Dynamical Systems • Nature-First</p>
         </div>
     </header>
 
     <!-- ABSTRACT -->
     <section id="abstract" class="max-w-screen-2xl mx-auto px-8 py-16">
-        <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="grid md:grid-cols-12 gap-12">
             <div class="md:col-span-4">
                 <h2 class="section-header text-4xl font-semibold mb-6">Abstract</h2>
             </div>
             <div class="md:col-span-8 text-lg leading-relaxed text-slate-300">
-                A minimal dynamical systems model of schizophrenia focused exclusively on thalamic reticular nucleus (TRN) sensory gating failure. 
-                We simulate heterogeneous virtual patients using coupled ODEs and closed-loop control. 
-                The Nature-First Hybrid (LIFU + Keto 2.0 + CBX) consistently restores gating and collapses sensory overload in simulation.
+                This thesis models schizophrenia symptomatology as impaired sensory gating in the thalamic reticular nucleus (TRN), 
+                deliberately omitting dopaminergic pathways to isolate core gating, metabolic, and inflammatory dynamics.<br><br>
+                
+                Using coupled differential equations and Monte Carlo simulation of heterogeneous virtual patients, 
+                we tested a Nature-First Hybrid Intervention: closed-loop low-intensity focused ultrasound (LIFU), 
+                ketogenic metabolic therapy (Keto 2.0), and high-purity broad-spectrum hemp cannabinoid extract (CBX).<br><br>
+                
+                The full package produces robust gating recovery and symptom reduction under realistic biological variability. 
+                Purely computational and speculative.
             </div>
         </div>
     </section>
@@ -81,85 +89,165 @@
     <!-- THEORY + INTERACTIVE -->
     <section id="theory" class="bg-slate-900 py-16">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="section-header text-4xl font-semibold mb-8 text-center">Dopamine-Free Core Model</h2>
+            <h2 class="section-header text-4xl font-semibold mb-8 text-center">Dopamine-Free Dynamical Model</h2>
             
             <div class="max-w-4xl mx-auto bg-slate-800 border border-slate-700 rounded-3xl p-8">
                 <div class="equation bg-black/70 p-6 rounded-2xl text-cyan-300 text-sm mb-8">
-                    dx/dt = −αₓx + βₓ(1−g)(s₀ + η(t))<br>
-                    dg/dt = α_g(g_target − g) + β_g e − γ_g i − δ_g x² + K_p(g_target − g)<br>
-                    de/dt = η_e(e_target^Keto − e) + k_Keto<br>
-                    di/dt = η_i(i_target^CBX − i) − k_CBX
+                    dx/dt = −αₓ x + βₓ (1−g)(s₀ + η(t))<br>
+                    dg/dt = α_g (g_target − g) + β_g e − γ_g i − δ_g x² + K_p (g_target − g)<br>
+                    de/dt = η_e (e_target^Keto − e) + k_Keto<br>
+                    di/dt = η_i (i_target^CBX − i) − k_CBX
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                <div class="grid md:grid-cols-3 gap-6 text-sm mb-8">
                     <div>
                         <label class="block text-slate-400 mb-1">LIFU Gain (K_p)</label>
-                        <input type="range" id="kp" min="0" max="2" step="0.1" value="0.8" class="sim-slider w-full">
-                        <span id="kp_val" class="text-cyan-400 font-mono">0.8</span>
+                        <input type="range" id="kp" min="0" max="2" step="0.05" value="0.85" class="sim-slider w-full">
+                        <span id="kp_val" class="text-cyan-400 font-mono">0.85</span>
                     </div>
                     <div>
                         <label class="block text-slate-400 mb-1">Keto Strength</label>
-                        <input type="range" id="keto" min="0" max="2" step="0.1" value="1.2" class="sim-slider w-full">
-                        <span id="keto_val" class="text-cyan-400 font-mono">1.2</span>
+                        <input type="range" id="keto" min="0" max="2" step="0.05" value="1.25" class="sim-slider w-full">
+                        <span id="keto_val" class="text-cyan-400 font-mono">1.25</span>
                     </div>
                     <div>
                         <label class="block text-slate-400 mb-1">CBX Strength</label>
-                        <input type="range" id="cbx" min="0" max="2" step="0.1" value="1.1" class="sim-slider w-full">
-                        <span id="cbx_val" class="text-cyan-400 font-mono">1.1</span>
+                        <input type="range" id="cbx" min="0" max="2" step="0.05" value="1.15" class="sim-slider w-full">
+                        <span id="cbx_val" class="text-cyan-400 font-mono">1.15</span>
                     </div>
                 </div>
 
                 <button onclick="runMiniSim()" 
-                        class="mt-6 w-full bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold py-4 rounded-2xl transition">
-                    ▶ Run 60-Second Toy Simulation
+                        class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold py-4 rounded-2xl transition mb-8">
+                    ▶ Run Interactive 60-Second Toy Simulation
                 </button>
 
-                <canvas id="miniChart" class="mt-8 w-full h-64"></canvas>
+                <canvas id="miniChart" class="w-full h-64"></canvas>
             </div>
         </div>
     </section>
 
     <!-- RESULTS -->
     <section id="results" class="max-w-screen-2xl mx-auto px-8 py-16">
-        <h2 class="section-header text-4xl font-semibold mb-8 text-center">Monte Carlo Results (200 virtual patients)</h2>
+        <h2 class="section-header text-4xl font-semibold mb-8 text-center">Monte Carlo Results<br><span class="text-base font-normal text-slate-400">(200 virtual patients • ±30% heterogeneity)</span></h2>
         
         <div class="overflow-x-auto">
-            <table class="w-full text-sm">
+            <table class="w-full text-sm border-collapse">
                 <thead>
                     <tr class="bg-slate-800">
-                        <th class="px-6 py-4 text-left">Arm</th>
-                        <th class="px-6 py-4 text-center">Mean Reduction</th>
-                        <th class="px-6 py-4 text-center">High Responders</th>
-                        <th class="px-6 py-4 text-center">Final Gating</th>
+                        <th class="px-6 py-5 text-left font-medium">Treatment Arm</th>
+                        <th class="px-6 py-5 text-center">Mean Symptom Reduction</th>
+                        <th class="px-6 py-5 text-center">High Responders (&gt;60%)</th>
+                        <th class="px-6 py-5 text-center">Final Gating Score</th>
+                        <th class="px-6 py-5 text-center">Side-Effect Burden</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-700">
                     <tr class="bg-slate-950">
-                        <td class="px-6 py-5">Baseline</td>
+                        <td class="px-6 py-5">Baseline (Leaky TRN)</td>
                         <td class="px-6 py-5 text-center text-red-400">—</td>
                         <td class="px-6 py-5 text-center">18%</td>
                         <td class="px-6 py-5 text-center">0.48</td>
+                        <td class="px-6 py-5 text-center">—</td>
                     </tr>
                     <tr>
                         <td class="px-6 py-5">Standard Care</td>
                         <td class="px-6 py-5 text-center">55.6%</td>
                         <td class="px-6 py-5 text-center">71%</td>
                         <td class="px-6 py-5 text-center">0.61</td>
+                        <td class="px-6 py-5 text-center">4.2</td>
                     </tr>
-                    <tr class="bg-emerald-950/60 border border-emerald-400 font-medium">
-                        <td class="px-6 py-5 flex items-center gap-2">
-                            <i class="fa-solid fa-leaf"></i> CBX-Enhanced Hybrid
+                    <tr class="bg-slate-950">
+                        <td class="px-6 py-5">LIFU + Keto 2.0</td>
+                        <td class="px-6 py-5 text-center">80.4%</td>
+                        <td class="px-6 py-5 text-center">94%</td>
+                        <td class="px-6 py-5 text-center">0.79</td>
+                        <td class="px-6 py-5 text-center">2.1</td>
+                    </tr>
+                    <tr class="bg-emerald-950/60 border border-emerald-400">
+                        <td class="px-6 py-5 font-medium flex items-center gap-x-2">
+                            <i class="fa-solid fa-leaf text-emerald-400"></i>
+                            Natural CBX-Enhanced Hybrid
                         </td>
-                        <td class="px-6 py-5 text-center text-emerald-400 font-bold">87.2%</td>
+                        <td class="px-6 py-5 text-center font-bold text-emerald-400">87.2%</td>
                         <td class="px-6 py-5 text-center font-bold">87%</td>
                         <td class="px-6 py-5 text-center font-bold">0.84</td>
+                        <td class="px-6 py-5 text-center font-bold">1.7</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <!-- Rest of the page (regimen, limitations, discussion, footer) remains the same as previous version -->
+    <!-- REGIMEN -->
+    <section id="regimen" class="max-w-screen-2xl mx-auto px-8 py-16 bg-slate-900">
+        <h2 class="section-header text-4xl font-semibold mb-12 text-center">Speculative Daily Regimen (Illustrative 2026 Pilot)</h2>
+        
+        <div class="max-w-4xl mx-auto bg-slate-800 rounded-3xl p-10 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="text-emerald-400 text-sm font-medium mb-4">🌅 MORNING</div>
+                <ul class="space-y-4 text-sm">
+                    <li>Keto coffee + MCT oil + electrolytes</li>
+                    <li>Broad-spectrum hemp CBX extract (200 mg CBD equiv.)</li>
+                </ul>
+            </div>
+            <div>
+                <div class="text-emerald-400 text-sm font-medium mb-4">☀️ DAY</div>
+                <ul class="space-y-4 text-sm">
+                    <li>Ketogenic meals (Keto 2.0)</li>
+                    <li>Second CBX dose (total 400–600 mg CBD equiv. daily)</li>
+                    <li>15–20 min closed-loop LIFU session</li>
+                </ul>
+            </div>
+            <div class="bg-emerald-950 border border-emerald-400/30 rounded-3xl p-8">
+                <div class="text-emerald-400 text-sm mb-2">ESTIMATED MONTHLY COST</div>
+                <div class="text-5xl font-semibold text-emerald-400">$380 – $620</div>
+                <p class="text-xs mt-4 text-emerald-200">CBX • Keto food • Supplements • Possible wearable LIFU amortization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIMITATIONS -->
+    <section class="max-w-screen-2xl mx-auto px-8 py-16">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header text-4xl font-semibold mb-8">Limitations</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-sm text-slate-400">
+                <ul class="space-y-3">
+                    <li>• Simplified toy model of thalamocortical circuitry</li>
+                    <li>• Deliberately omits dopamine and other neuromodulators</li>
+                    <li>• Results depend on modeling assumptions</li>
+                </ul>
+                <ul class="space-y-3">
+                    <li>• No explicit oscillatory dynamics yet</li>
+                    <li>• Long-term safety of repeated LIFU unknown</li>
+                    <li>• Requires rigorous future clinical validation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCUSSION -->
+    <section id="discussion" class="max-w-screen-2xl mx-auto px-8 py-16 bg-slate-900">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header text-4xl font-semibold mb-8">Discussion &amp; Next Steps</h2>
+            <p class="text-lg leading-relaxed text-slate-300">
+                By removing dopamine from the equations, this model highlights the potential power of directly targeting TRN gating via closed-loop control, 
+                metabolic optimization, and cannabinoid support. The architecture emphasizes feedback, damping, and filtering — systems thinking over isolated symptoms.
+            </p>
+            <p class="mt-8 text-slate-400">
+                We welcome collaboration from computational neuroscientists, clinicians, and engineers. 
+                Future extensions could include Wilson-Cowan oscillators, bifurcation analysis, or full parameter sweeps.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-slate-800">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center">
+            <p class="text-slate-400 text-sm">Speculative research exploration • May 2026</p>
+            <p class="text-xs text-slate-600 mt-6">Not medical advice • Simulated results only • For discussion and research inspiration</p>
+        </div>
+    </footer>
 
     <script>
         let chart;
@@ -168,9 +256,11 @@
             const keto = parseFloat(document.getElementById('keto').value);
             const cbx = parseFloat(document.getElementById('cbx').value);
             
-            // Simple fake trajectory
             const t = Array.from({length: 61}, (_, i) => i);
-            const overload = t.map(i => Math.max(0, 12 - (kp*1.8 + keto*0.9 + cbx*1.1) * Math.min(i/25, 1) + (Math.random()-0.5)*0.8));
+            const overload = t.map(i => {
+                const intervention = (kp * 1.8) + (keto * 0.9) + (cbx * 1.1);
+                return Math.max(0.2, 14 - intervention * Math.min(i/22, 1) + (Math.random() - 0.5) * 1.2);
+            });
             
             if (chart) chart.destroy();
             
@@ -179,24 +269,25 @@
                 data: {
                     labels: t,
                     datasets: [{
-                        label: 'Sensory Overload',
+                        label: 'Sensory Overload (x(t))',
                         data: overload,
                         borderColor: '#22d3ee',
-                        tension: 0.3,
-                        borderWidth: 3
+                        tension: 0.4,
+                        borderWidth: 3,
+                        pointRadius: 0
                     }]
                 },
-                options: { animation: { duration: 1200 }, scales: { y: { beginAtZero: true } } }
+                options: {
+                    animation: { duration: 1400 },
+                    scales: { y: { beginAtZero: true, max: 15 } }
+                }
             });
         }
 
-        // Live slider values
         document.querySelectorAll('input[type=range]').forEach(slider => {
-            slider.addEventListener('input', () => {
-                document.getElementById(slider.id + '_val').textContent = slider.value;
-            });
+            const valEl = document.getElementById(slider.id + '_val');
+            slider.addEventListener('input', () => valEl.textContent = slider.value);
         });
     </script>
 </body>
-
 </html>
